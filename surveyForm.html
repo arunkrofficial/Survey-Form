@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./surveyForm.css" />
+  <title>Organization Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center"> World Exercise Organization Survey Form. </h1>
+      <p id="description" class="description text-center">
+        Thank you for taking the time to answer World exercise organization survey form. </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name" Name </label>
+          <input type=text name="name" class="form-control" placeholder="Enter your name" required < />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email>" Email </label>
+          <input type=text name="email" id="email" class="form-control" placeholder="Enter your email" required />
+      </div>
+
+
+
+      <div class="form-group">
+        <label id="age-label" for="email>" Email </label>
+          <input type=text name="age" id="number" min="10" max="100" class="form-control" placeholder="Age" />
+      </div>
+
+
+      <div class="form-group">
+        <p> Which option best describes your physical condition?</p>
+        <select id="dropdown" name="condition" class="form-control" required>
+          <option disable selected value> Select your physical condition </option>
+          <option value="Sedentary"> Sedentary </option>
+          <option value="Not a complete sedentary, at least I exercise when I walk to work"> Not a complete sedentary,
+            at least I exercise when I walk to work </option>
+          <option value="Not a lover of exercise but it is done for health"> Not a lover of exercise but it is done for
+            health </option>
+          <option value="passionate about exercise"> Passionate about exercise </option>
+          <option value="Other"> Other </option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Would you exercise in the year 2023 as a habit?</p>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+      </div>
+
+      <div class="form-group">
+        <p>
+          What is your favorite type of exercise?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="Aerobic exercises">Aerobic exercises</option>
+          <option value="Flexibility exercises">Flexibility exercises</option>
+          <option value="Strength and endurance exercises">Strength and endurance exercises</option>
+
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>
+          What exercise would you like to try?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+
+        <label><input name="prefer" value="Dance" type="checkbox" class="input-checkbox" />Dance</label>
+        <label>
+          <input name="prefer" value="Yoga" type="checkbox" class="input-checkbox" />Yoga</label>
+        <label><input name="prefer" value="Pilates" type="checkbox" class="input-checkbox" />Pilates</label>
+        <label><input name="prefer" value="riding a bicycle" type="checkbox" class="input-checkbox" />Riding a
+          bicycle</label>
+        <label><input name="prefer" value="Swimming" type="checkbox" class="input-checkbox" />Swimming</label>
+        <label><input name="prefer" value="Walk" type="checkbox" class="input-checkbox" />Walk</label>
+
+      </div>
+
+      <div class="form-group">
+        <p>Any ideas to encourage exercise?</p>
+        <textarea id="comments" class="input-textarea" name="comment"
+          placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
